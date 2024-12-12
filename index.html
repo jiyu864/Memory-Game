@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>치매 예방 기억력 게임</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-controls">
+            <label for="difficulty">난이도 선택:</label>
+            <select id="difficulty">
+                <option value="1">쉬움 (6장)</option>
+                <option value="2">쉬움+ (12장)</option>
+                <option value="3" selected>보통 (18장)</option>
+                <option value="4">어려움 (24장)</option>
+                <option value="5">고급 (30장)</option>
+            </select>
+            <button id="start-btn">게임 시작</button>
+        </div>
+        <div class="moves-counter">시도 횟수: <span id="moves">0</span></div>
+        <div id="game-board" class="game-board"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
